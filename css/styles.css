@@ -188,6 +188,7 @@ img {
 
 .hero {
   background-color: var(--navy-blue);
+  background-image: url(./images/hero/people-office-1.jpeg);
 }
 
 .hero-container {
@@ -295,7 +296,6 @@ img {
 .list-item {
   background-color: var(--white);
   width: calc((100% - 72px) / 4);
-  /* padding-bottom: 32px; */
   border-radius: 0 0 4px 4px;
 }
 
@@ -303,6 +303,32 @@ img {
   text-align: center;
 }
 
+.social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 24px;
+  padding-top: 8px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--iris);
+  border-radius: 50%;
+  fill: var(--cloud);
+}
+
+.social-icon {
+  width: 16px;
+  height: 16px;
+}
 /* ============= /OUR TEAM =========== */
 
 /* ============== PORTFOLIO ============= */
