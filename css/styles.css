@@ -306,7 +306,6 @@ img {
 .social-list {
   display: flex;
   justify-content: center;
-  align-items: center;
   column-gap: 24px;
   padding-top: 8px;
   padding-bottom: 32px;
@@ -322,12 +321,12 @@ img {
   height: 40px;
   background-color: var(--iris);
   border-radius: 50%;
-  fill: var(--cloud);
 }
 
 .social-icon {
   width: 16px;
   height: 16px;
+  fill: var(--cloud);
 }
 /* ============= /OUR TEAM =========== */
 
@@ -387,6 +386,29 @@ img {
 
   max-width: 264px;
   margin-top: 16px;
+}
+
+.footer {
+  display: flex;
+}
+
+.footer-box {
+  margin-right: 120px;
+}
+
+.footer-social-text {
+  font-weight: 500;
+  color: var(--white);
+}
+
+.footer-social-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--green);
 }
 
 /* ================== /FOOTER =========== */

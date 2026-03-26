@@ -1,3 +1,5 @@
+_DS_Store
+
 # Logs
 logs
 *.log
@@ -139,3 +141,6 @@ vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 
 _DS_Store
+
+.DS_Store
+
