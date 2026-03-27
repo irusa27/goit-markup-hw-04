@@ -158,6 +158,7 @@ img {
   font-weight: 500;
   line-height: 1.5;
   text-decoration: var(--link-line);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover,
@@ -172,9 +173,9 @@ img {
 .contact-link {
   color: var(--slate);
   font-size: 16px;
-
   line-height: 1.5;
   text-decoration: var(--link-line);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-link:hover,
@@ -188,7 +189,11 @@ img {
 
 .hero {
   background-color: var(--navy-blue);
-  background-image: url(./images/hero/people-office-1.jpeg);
+  background-image:
+    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/hero/bg-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-container {
@@ -224,11 +229,11 @@ img {
   padding: 16px 32px;
   border: none;
   border-radius: 4px;
-  /* width: 169px; */
-  /* height: 56px; */
   text-align: center;
 
   cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -253,7 +258,25 @@ img {
   width: calc((100% - 72px) / 4);
 }
 
-/* .list-text */
+.features-icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 100px;
+  margin-bottom: 8px;
+  border: 1px solid var(--light-slate);
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  background: var(--cloud);
+  fill: var(--navy-blue);
+}
+
+.features-icon {
+  /* width: 64px; */
+  /* height: 64px; */
+}
+
 .features-text {
   margin-top: 8px;
 }
@@ -320,13 +343,13 @@ img {
   width: 40px;
   height: 40px;
   background-color: var(--iris);
+  fill: var(--cloud);
   border-radius: 50%;
 }
 
 .social-icon {
   width: 16px;
   height: 16px;
-  fill: var(--cloud);
 }
 /* ============= /OUR TEAM =========== */
 
@@ -344,6 +367,32 @@ img {
 
 .portfolio-item {
   width: calc((100% - 48px) / 3);
+}
+
+.overlay-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  color: var(--cloud);
+  background-color: var(--iris);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 360px;
+  height: 300px;
+  padding-top: 40px;
+  padding-bottom: 164px;
+  padding-right: 32px;
+  padding-left: 32px;
+  overflow: auto;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-item:hover .overlay {
+  transform: translateY(0%);
 }
 
 .portfolio-box {
@@ -404,6 +453,10 @@ img {
 .footer-social-icon {
   width: 24px;
   height: 24px;
+}
+
+.footer-social-link {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-link:hover,
