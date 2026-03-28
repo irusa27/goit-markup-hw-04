@@ -146,6 +146,7 @@ img {
   border-radius: 2px;
   height: 4px;
   background-color: var(--ocean);
+
   position: absolute;
   left: 0;
   bottom: -1px;
@@ -188,6 +189,10 @@ img {
 
 .nav-link:hover,
 .nav-link:focus {
+  color: var(--ocean);
+}
+
+.nav .nav-link.current {
   color: var(--ocean);
 }
 
