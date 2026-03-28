@@ -146,10 +146,15 @@ img {
   height: 1px;
   border-radius: 2px;
   height: 4px;
-  background: var(--ocean);
+  background-color: var(--navy-blue);
   position: absolute;
   left: 0;
   bottom: -1px;
+}
+
+.nav-link-pseudo:hover::after,
+.nav-link-pseudo:focus::after {
+  background-color: var(--ocean);
 }
 
 .logo {
@@ -253,7 +258,7 @@ img {
   border-radius: 4px;
   text-align: center;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-background: var(--iris);
+  background: var(--iris);
 
   cursor: pointer;
 
@@ -395,7 +400,10 @@ background: var(--iris);
 }
 
 .portfolio-item:hover {
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  box-shadow:
+    0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .overlay-box {
