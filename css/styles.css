@@ -220,6 +220,7 @@ img {
     url(../images/hero/bg-image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   max-width: 1440px;
 }
 
@@ -373,7 +374,7 @@ img {
 
 .social-list-link:hover,
 .social-list-link:focus {
-  background-color: var(--green);
+  background-color: var(--ocean);
 }
 
 .social-icon {
@@ -477,6 +478,7 @@ img {
 
 .footer {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-box {
